@@ -1,0 +1,25 @@
+title: PS2 Web Emulator
+description: A Sony PlayStation 2 Emulator running in your browser
+baseurl: "/ps2-emulator"
+url: "https://yourusername.github.io"
+
+theme: null
+plugins: []
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+
+# Collections
+collections:
+  docs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

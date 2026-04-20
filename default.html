@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" />
+</head>
+<body>
+  {{ content }}
+  <!-- Core emulator modules loaded in dependency order -->
+  <script src="{{ '/assets/js/utils.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/memory.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/cpu.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/gs_renderer.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/iop.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/input.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/disc.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/emulator.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/ui.js' | relative_url }}"></script>
+</body>
+</html>
